@@ -1,0 +1,11 @@
+
+/* Direction-aware running head, colored by the visible page surface. */
+.header{--header-surface:var(--paper);--header-ink:var(--ink);--header-rule:var(--rule);--header-logo-filter:none;background:var(--header-surface);color:var(--header-ink);transition:transform .3s cubic-bezier(.22,.61,.36,1),background-color .22s,color .22s;will-change:transform}
+.header.is-scroll-hidden{transform:translateY(calc(-100% - 1px));pointer-events:none}
+.header.is-open,.header:focus-within{transform:translateY(0);pointer-events:auto}
+.header .brand img{filter:var(--header-logo-filter)}
+.header .menu-button{color:inherit}
+.header nav .nav-whatsapp{border-color:var(--header-rule)}
+.header nav .nav-whatsapp:hover{background:var(--header-hover,#22232108);border-color:currentColor}
+@media(max-width:800px){.header.is-open{background:var(--paper);color:var(--ink)}.header.is-open .brand img{filter:none}.header nav .nav-whatsapp{border-color:var(--dark-rule)}.header nav .nav-whatsapp:hover{background:#f2f2ed0d;border-color:var(--paper)}}
+@media(prefers-reduced-motion:reduce){.header{transition:none;will-change:auto}}

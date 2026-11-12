@@ -1,0 +1,22 @@
+
+/* Compact masthead, plain navigation and form action alignment. */
+:root{--header-size:68px}
+html{scroll-padding-top:calc(var(--header-size) + 16px)}
+.header{height:var(--header-size);padding-block:12px}
+.brand{width:128px}.brand img{max-height:36px}
+.header nav{font-size:13px;gap:32px}
+.header nav a::before{display:none;content:none}
+.header nav a{transition:opacity .2s;text-decoration:none;border-bottom:0}
+.header nav a:hover{opacity:.6}
+.contact h2{top:calc(var(--header-size) + 24px)}
+.contact .action{width:100%;justify-content:flex-end}
+.contact .action button{margin:0 0 0 auto;flex:0 0 auto}
+@media(max-width:800px){:root{--header-size:60px}.brand{width:112px}.header{padding-block:10px}.header nav{inset:var(--header-size) 0 auto;max-height:calc(100dvh - var(--header-size))}.menu-scrim{inset:var(--header-size) 0 0}.contact h2{top:auto}}
+
+/* One uninterrupted title above the photographs. */
+.cover-heading{display:block;grid-column:1/13;grid-row:1;font-size:clamp(72px,13vw,220px);line-height:1;letter-spacing:-.075em;white-space:nowrap;padding:12px 0 45px;margin-left:-.035em}
+.cover-ready .cover-heading{animation:cover-type .85s var(--ease) both}
+.cover-caption{grid-row:3;margin-top:24px}
+.living-symbol{stroke-width:.55}
+@media(min-width:900px) and (prefers-reduced-motion:no-preference){.work-cover{position:sticky;top:var(--work-pin-top,var(--header-size));min-height:calc(100svh - var(--header-size))}}
+@media(max-width:800px){.cover-heading{grid-column:1/7;font-size:12.3vw;letter-spacing:-.065em;padding:5px 0 28px}.cover-note{grid-row:3}.cover-caption{grid-row:3;margin-top:37px}.living-symbol{stroke-width:.55}}

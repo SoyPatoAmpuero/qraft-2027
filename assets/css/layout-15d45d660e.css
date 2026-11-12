@@ -1,0 +1,14 @@
+
+/* Compact masthead, plain navigation and form action alignment. */
+:root{--header-size:68px}
+html{scroll-padding-top:calc(var(--header-size) + 16px)}
+.header{height:var(--header-size);padding-block:12px}
+.brand{width:128px}.brand img{max-height:36px}
+.header nav{font-size:13px;gap:32px}
+.header nav a::before{display:none;content:none}
+.header nav a{transition:opacity .2s;text-decoration:none;border-bottom:0}
+.header nav a:hover{opacity:.6}
+.contact h2{top:calc(var(--header-size) + 24px)}
+.contact .action{width:100%;justify-content:flex-end}
+.contact .action button{margin:0 0 0 auto;flex:0 0 auto}
+@media(max-width:800px){:root{--header-size:60px}.brand{width:112px}.header{padding-block:10px}.header nav{inset:var(--header-size) 0 auto;max-height:calc(100dvh - var(--header-size))}.menu-scrim{inset:var(--header-size) 0 0}.contact h2{top:auto}}
