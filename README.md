@@ -1,6 +1,6 @@
 # Qraft Arquitectos
 
-Sitio editorial de Qraft Arquitectos. Entrega basada en la **versión 28 — header contextual**, del 12 de noviembre de 2026.
+Sitio editorial de Qraft Arquitectos. Entrega basada en la **versión 34 — cierre dinámico; retrato pendiente de una fuente mejor**, del 13 de noviembre de 2026.
 
 ## Abrir en tu computador
 
@@ -49,4 +49,7 @@ Los sufijos de los recursos identifican su contenido y evitan nombres duplicados
 
 ## Alcance de la entrega
 
-Se conservaron el contenido, las fotografías, los enlaces y la apariencia de la versión 28. Solo se extrajeron los recursos incrustados para facilitar el mantenimiento y reducir el peso repetido. No se incluyeron versiones anteriores, capturas, archivos temporales ni retratos fuente sin utilizar.
+Incluye los ajustes sobre la versión 28: portada de Casa Borquez con la vista general existente del proyecto (incluye sus volúmenes y estacionamiento), y título del hero un 20 % menor en escritorio y aproximadamente un 12 % menor en móvil. Se retiraron dos imágenes retocadas que omitían parte de la casa; se conserva el resto de las fotografías. No se incluyeron versiones anteriores, capturas, archivos temporales ni retratos fuente sin utilizar.
+
+
+La versión 34 incorpora el cierre con QRAFT a menor escala y un imagotipo volumétrico animado a su lado, con pausa y soporte de movimiento reducido. El título de portada es “Habitar el Sur.”.
